@@ -25,6 +25,11 @@ namespace ConsoleApp900
 
             Console.WriteLine(resultado);
         }
+        static void ModificarValor(int a)
+        {
+            a = a + 1;
+            Console.WriteLine($"DENTRO DEL METODO: {a}");
+        }
         static void Main(string[] args)
         {
             int x = 10, y = 20;
@@ -32,6 +37,12 @@ namespace ConsoleApp900
             ImprimirSuma(y, x);
             ImprimirSuma(1000, -1);
             ImprimirPotencia(5, 3);
+
+            int edad = 16;
+            Console.WriteLine($"ANTES DEL METODO: {edad}");
+            ModificarValor(edad);
+            Console.WriteLine($"DESPUES DEL METODO: {edad}");
+
         }
     }
 }
